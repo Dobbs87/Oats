@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Altero-Regular';
+  src: url('Altero-Regular.otf');
+}
+
+$font-stack: 'Altero-Regular';
+
+h1 {
+  font: 100% $font-stack;
+  color: tomato;
+}
