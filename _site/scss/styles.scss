@@ -5,7 +5,16 @@
 
 $font-stack: 'Altero-Regular';
 
-h1 {
-  font: 100% $font-stack;
-  color: tomato;
+// h1 {
+//   font: 100% $font-stack;
+//   color: tomato;
+// }
+body, html {
+  height: 100%;
+}
+
+.map {
+  background-image: url('/images/topographicMap.png');
+  height: 100%;
+
 }
