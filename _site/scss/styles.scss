@@ -1,3 +1,5 @@
+/*----------Global Styles-----------*/
+
 @font-face {
   font-family: 'Altero-Regular';
   src: url('Altero-Regular.otf');
@@ -5,16 +7,38 @@
 
 $font-stack: 'Altero-Regular';
 
-// h1 {
-//   font: 100% $font-stack;
-//   color: tomato;
-// }
 body, html {
   height: 100%;
 }
+body {
+  background-image: url('/images/topographicMap-2.png');
+}
+h1, h2 {
+  font: 100% $font-stack;
+}
 
-.map {
-  background-image: url('/images/topographicMap.png');
+
+/*----------Hero Styles-----------*/
+.map_hero {
+  background-color: darkslategrey;
   height: 100%;
+  filter: opacity(60%);
+}
 
+.container {
+  margin: 0;
+  padding-left: 100%;
+  padding-bottom: 25%;
+  overflow: hidden;
+}
+.container:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -100vw;
+  border-right: 125vw solid transparent;
+  border-bottom: 125vw solid transparent;
+  border-left: 100vw solid #000;
+  filter: opacity(65%);
 }
