@@ -19,26 +19,44 @@ h1, h2 {
 
 
 /*----------Hero Styles-----------*/
-.map_hero {
-  background-color: darkslategrey;
-  height: 100%;
-  filter: opacity(60%);
-}
-
-.container {
+.hero {
   margin: 0;
   padding-left: 100%;
   padding-bottom: 25%;
   overflow: hidden;
 }
-.container:after {
+.hero:after {
   content: "";
   display: block;
   width: 0;
   height: 0;
   margin-left: -100vw;
   border-right: 125vw solid transparent;
-  border-bottom: 125vw solid transparent;
+  border-bottom: 200vw solid transparent;
   border-left: 100vw solid #000;
-  filter: opacity(65%);
+  filter: opacity(45%);
+}
+/*----------Title Styles-----------*/
+.title {
+  position: absolute;
+  top: 2vh;
+  left: 5vw;
+  font-size: 20em;
+  color: tan;
+}
+.title > h2 {
+  margin-bottom: -3vh;
+}
+
+.title > h2:nth-child(1) {
+  position: relative;
+  left: .5vw;
+}
+.title > h2:nth-child(3) {
+  position: relative;
+  left: 1.5vw;
+}
+.title > h2:nth-child(4) {
+  position: relative;
+  left: 1vw;
 }
